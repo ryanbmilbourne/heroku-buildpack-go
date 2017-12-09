@@ -9,6 +9,7 @@ cache=$(cd "$2/" && pwd)
 env_dir="${3}"
 
 echo "PKG_CONFIG_PATH ($PKG_CONFIG_PATH)"
+echo "build_dir: ($build)"
 echo `ls $build/.heroku/vendor/lib/pkgconfig`
 
 buildpack=$(cd "$(dirname $0)/.." && pwd)
